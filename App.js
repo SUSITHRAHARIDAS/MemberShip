@@ -47,7 +47,7 @@ export default function APP(){
   return(
     <>
 
-    <h1 style ={{fontFamily:"monospace",fontWeight:"bolder",color:"skyblue",textAlign:"center"}}>PRICE CART TASK</h1>
+    <h1 style ={{fontFamily:"monospace",fontWeight:"bolder",color:"skyblue",textAlign:"center"}}>MEMBERSHIP</h1>
   
   <div className="container" style={{backgroundColor:"skyblue",height:"400px",marginTop:"50px"}}>
   <div className = "row" style={{paddingTop:"20px"}}>
