@@ -11,18 +11,16 @@ export function ProductCard(props){
             <h6 class="card-price text-center">{props.data.price}<span class="period">/month</span></h6>
             <hr></hr>
             <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited
-                Private Projects</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated
-                Phone Support</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain
+              <li><span class="fa-li"><i class={props.data.icon.icon1}></i></span>{props.data.features.Point1}</li>
+              <li><span class="fa-li"><i class={props.data.icon.icon2}></i></span>{props.data.features.Point2}</li>
+              <li><span class="fa-li"><i class={props.data.icon.icon3}></i></span>{props.data.features.Point3}</li>
+              <li><span class="fa-li"><i class={props.data.icon.icon4}></i></span>{props.data.features.Point4}</li>
+              <li ><span class="fa-li"><i class={props.data.icon.icon5}></i></span>{props.data.features.Point5}</li>
+              <li ><span class="fa-li"><i class={props.data.icon.icon6}></i></span>{props.data.features.Point6}</li>
+              <li ><span class="fa-li"><i class={props.data.icon.icon7}></i></span>{props.data.features.Point7}
               </li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status
-                Reports</li>
+              <li ><span class="fa-li"><i class={props.data?.icon.icon8}></i></span>{props.data.features.Point8}
+                </li>
             </ul>
             
               <button  style={{width:"100%",borderRadius:"20px"}} class="btn btn-primary text-uppercase">Button</button>
