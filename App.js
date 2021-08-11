@@ -1,73 +1,107 @@
-import { ProductCard } from "./Productcard"
+import react from "react";
+import {ProductCard} from "./Productcard"
 
 
-export default function APP(){
+function App() {
+    const products = [
+      {
+        title:"Free",
+        price:"$0",
+        features: { Point1:"Single User",
+        Point2 :" 5GB Storage",
+        Point3: "Unlimited Public Projects",
+        Point4 :" Community Access",
+        Point5 :"Unlimited Private Projects",
+        Point6 :"Dedicated Phone Support",
+        Point7 :" Free Subdomain",
+        Point8 :"Monthly Status Reports"},
+      
+      icon : {
+        icon1 : "fas fa-check",
+        icon2: "fas fa-check",
+        icon3:"fas fa-check",
+        icon4: "fas fa-check",
+        icon5:"fas fa-times",
+        icon6:"fas fa-times",
+        icon7:"fas fa-times",
+        icon8:"fas fa-times",
 
-
-  const Productdetails = [
-
-{
-  title: "FREE",
-  price :"$0",
-  features:[
-  "Single User",
-  "5GB Storage",
-  "Unlimited Public Projects",
-  "Community Access",
-  "Unlimited Private Projects",
-  "Dedicated Phone Support",
-  "Free Subdomain",
-  "Monthly Status Reports"]},
-
-{title: "PLUS",
-  price :"$9",
-  features:[
-  "5 User",
-  "50GB Storage",
-  "Unlimited Public Projects",
-  "Community Access",
-  "Unlimited Private Projects",
-  "Dedicated Phone Support",
-  "Free Subdomain",
-  "Monthly Status Reports"]},
+      }
+    },
+      {
+        title:"Plus",
+        price:"$9",
+        features:{ Point1:"5 Users",
+        Point2 :" 5GB Storage",
+        Point3: "Unlimited Public Projects",
+        Point4 :" Community Access",
+        Point5 :"Unlimited Private Projects",
+        Point6 :"Dedicated Phone Support",
+        Point7 :" Free Subdomain",
+        Point8 :"Monthly Status Reports"},
+        icon : {
+          icon1 : "fas fa-check",
+          icon2: "fas fa-check",
+          icon3:"fas fa-check",
+          icon4: "fas fa-check",
+          icon5:"fas fa-check",
+          icon6:"fas fa-check",
+          icon7:"fas fa-check",
+          icon8:"fas fa-times",
   
-  {title: "PRO",
-  price :"$49",
-  features:[
-  "Unlimited User",
-  "150GB Storage",
-  "Unlimited Public Projects",
-  "Community Access",
-  "Unlimited Private Projects",
-  "Dedicated Phone Support",
-  "Free Subdomain",
-  "Monthly Status Reports"]},
-  ]
+        }
+      },
+      {
+        title:"Pro",
+        price:"$49",
+        features: { Point1:"Unlimited Users",
+        Point2 :" 5GB Storage",
+        Point3: "Unlimited Public Projects",
+        Point4 :" Community Access",
+        Point5 :"Unlimited Private Projects",
+        Point6 :"Dedicated Phone Support",
+        Point7 :"Unlimited Free Subdomain",
+        Point8 :"Monthly Status Reports"},
+        icon : {
+          icon1 : "fas fa-check",
+          icon2: "fas fa-check",
+          icon3:"fas fa-check",
+          icon4: "fas fa-check",
+          icon5:"fas fa-check",
+          icon6:"fas fa-check",
+          icon7:"fas fa-check",
+          icon8:"fas fa-check",
+          
   
-  return(
-    <>
-
-    <h1 style ={{fontFamily:"monospace",fontWeight:"bolder",color:"skyblue",textAlign:"center"}}>MEMBERSHIP</h1>
+        }
+      },
+      
   
-  <div className="container" style={{backgroundColor:"skyblue",height:"400px",marginTop:"50px"}}>
-  <div className = "row" style={{paddingTop:"20px"}}>
-  {
-Productdetails.map((ele)=>
-<ProductCard data = {ele} ></ProductCard>)
-  }
-
-
-  </div>
+    ]
   
-  </div>
-
-
-    </>
-  )
-}
-     
-
-  
-
     
-   
+    return(
+      <>
+       <h1 style={{textAlign:"center",color:"skyblue",fontFamily:"monospace"}}>PRICING CART TASK</h1>
+    <div className="container" style={{backgroundColor:'skyblue',height:"400px",marginTop:"30px"}}>
+      <div className="row" style={{paddingTop:"20px"}}>
+      
+       { products.map((ele)=>
+       <ProductCard data={ele} ></ProductCard>)
+        
+       }  
+  
+      
+      </div>
+  
+      </div> 
+  
+     
+  
+  
+    </>
+    )
+    
+  }
+  
+  export default App;
